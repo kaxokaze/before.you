@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#070605"><title>BEFORE YOU / ADMIN</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="/favicon.ico"><link rel="stylesheet" href="/css/site.css"></head>
+<body class="admin-body protect-content">
+<main class="admin-shell">
+  <section id="loginView" class="admin-login" aria-labelledby="adminLoginTitle">
+    <div class="admin-kicker">BEFORE YOU / PRIVATE MATERIAL</div>
+    <div class="admin-login__grid">
+      <div><h1 id="adminLoginTitle" class="admin-title">ADMIN</h1><p class="admin-lead">This area is not part of the public site. Google sign-in is required, and the server checks the administrator allowlist before any report data is returned.</p></div>
+      <div class="admin-gate"><div class="admin-gate__label">ACCESS GATE</div><div class="admin-gate__state" id="authState">WAITING</div><button id="loginButton" class="admin-primary" type="button">CONTINUE WITH GOOGLE <span>→</span></button><div id="loginError" class="admin-error" role="alert"></div></div>
+    </div>
+    <div class="admin-footnote">IP addresses and approximate visitor regions are private diagnostic data visible only inside this allowlisted administrator area.</div>
+  </section>
+  <section id="panel" class="admin-panel" hidden aria-live="polite">
+    <header class="admin-toolbar"><div><div class="admin-kicker">BEFORE YOU / REPORT</div><h1 class="admin-title">SITE REPORT</h1><div id="adminIdentity" class="admin-note"></div></div><div class="admin-toolbar__actions"><button id="refreshButton" type="button">REFRESH</button><button id="logoutButton" type="button">SIGN OUT</button></div></header>
+    <div id="adminStatus" class="admin-status">CONNECTED</div>
+    <div class="admin-grid">
+      <div class="admin-card admin-card--primary"><small>Published notes</small><strong id="notesCount">—</strong></div><div class="admin-card"><small>Visitor notes</small><strong id="humanNotes">—</strong></div><div class="admin-card"><small>Visitors / all time</small><strong id="visitorCount">—</strong></div><div class="admin-card"><small>Unique IPs</small><strong id="uniqueIps">—</strong></div><div class="admin-card"><small>Visits / 24h</small><strong id="last24">—</strong></div><div class="admin-card"><small>Regions</small><strong id="regionCount">—</strong></div>
+    </div>
+    <div class="admin-subgrid">
+      <section class="admin-section"><div class="admin-section__head"><h2>Regions</h2><span>VISITOR DISTRIBUTION</span></div><div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Region</th><th>Visits</th></tr></thead><tbody id="regionsBody"></tbody></table></div></section>
+      <section class="admin-section"><div class="admin-section__head"><h2>Recent visitors</h2><span>LAST 100 ROWS</span></div><div class="admin-table-wrap"><table class="admin-table admin-table--wide"><thead><tr><th>Time</th><th>IP</th><th>Region</th><th>Path</th></tr></thead><tbody id="visitorsBody"></tbody></table></div></section>
+    </div>
+    <div class="admin-disclaimer">NOTE: IP geolocation is approximate. A browser-provided region is only used after server-side reverse geocoding. No public visitor list is exposed.</div>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" crossorigin="anonymous"></script><script src="/js/admin.js" defer></script>
+</body></html>

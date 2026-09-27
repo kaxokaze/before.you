@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080706">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="BEFORE YOU — an abandoned-looking corner of the internet where strangers leave things for the next stranger.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BEFORE YOU — abandoned material">
+  <meta property="og:description" content="Someone was here before you. You found what they left behind.">
+  <meta property="og:url" content="https://before-you.onrender.com/">
+  <link rel="canonical" href="https://before-you.onrender.com/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <title>BEFORE YOU — abandoned material</title>
+</head>
+<body data-route="/" class="protect-content">
+  <div id="boot" class="boot" aria-hidden="true">
+    <div class="boot__paper">
+      <div class="boot__head"><b>BEFORE YOU</b><span>BOOT / 06</span></div>
+      <div class="boot__rule"></div>
+      <div class="boot__bar"><i id="bootBar"></i></div>
+      <div id="bootStatus" class="boot__status">checking old material...</div>
+      <div class="boot__small">please wait. the connection is unstable.</div>
+    </div>
+  </div>
+
+  <div class="site-shell">
+    <header class="masthead">
+      <div class="masthead__brand"><a href="/" data-nav>BEFORE YOU</a></div>
+      <div class="masthead__tag">UNSORTED MATERIAL / NO OWNER / STILL ONLINE</div>
+      <div class="masthead__clock" id="clock">--:--:--</div>
+      <div class="masthead__status"><i></i> CONNECTION: <b>OPEN</b></div>
+    </header>
+
+    <nav class="navline" aria-label="Primary navigation">
+      <a href="/" data-nav data-page="entry">01 ENTRY</a>
+      <a href="/found" data-nav data-page="found">02 FOUND</a>
+      <a href="/leave" data-nav data-page="leave">03 LEAVE</a>
+      <button id="audioToggle" class="audio-toggle" type="button" aria-pressed="true">[ AUDIO: ON ]</button>
+    </nav>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>SOMEONE WAS HERE BEFORE YOU</span><em>///</em><span>NO ACCOUNTS / NO REPLY</span><em>///</em><span>THIS PAGE WAS LEFT ONLINE</span><em>///</em><span>DO NOT BELIEVE EVERYTHING WRITTEN HERE</span><em>///</em><span>IF YOU FOUND THIS BY ACCIDENT, STAY A WHILE</span><em>///</em>
+      </div>
+    </div>
+
+    <main id="page" class="page" tabindex="-1"></main>
+
+    <footer class="footerbar">
+      <span>BEFORE YOU / FILE STATUS: OPEN</span>
+      <span>NO PUBLIC ACCOUNT SYSTEM</span>
+      <span>DOCUMENT: UNSORTED</span>
+    </footer>
+  </div>
+
+  <div id="transition" class="transition" aria-hidden="true">
+    <div class="transition__label">OPENING NEXT FILE</div>
+    <div class="transition__bar"><i></i></div>
+    <div id="transitionStatus" class="transition__status">please wait...</div>
+  </div>
+
+  <div class="signal-layer" aria-hidden="true"></div>
+  <div class="signal-line" aria-hidden="true"></div>
+  <div class="blood-drip blood-drip--a" aria-hidden="true"></div>
+  <div class="blood-drip blood-drip--b" aria-hidden="true"></div>
+  <div class="disturbance disturbance--a" aria-hidden="true"></div>
+  <div class="disturbance disturbance--b" aria-hidden="true"></div>
+
+  <audio id="siteAudio" preload="auto" playsinline src="/audio/constant_entry.mp3?v=7.0"></audio>
+  <script src="/js/audio.js" defer></script>
+  <script src="/js/app.js" defer></script>
+</body>
+</html>

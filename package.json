@@ -1,0 +1,12 @@
+{
+  "name": "before-you",
+  "version": "7.0.0",
+  "private": true,
+  "type": "module",
+  "description": "BEFORE YOU — an abandoned corner of the internet passed from stranger to stranger.",
+  "scripts": {
+    "start": "node --env-file=.env server.mjs",
+    "dev": "node --watch --env-file=.env server.mjs",
+    "check": "node --check server.mjs && node --check public/js/app.js && node --check public/js/admin.js && node --check public/js/audio.js"
+  }
+}
